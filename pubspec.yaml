@@ -17,4 +17,11 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+  - family: Jost
+    fonts:
+      - asset: fonts/Jost/Jost-VariableFont_wght.ttf
+      - asset: fonts/Jost/Jost-Italic-VariableFont_wght.ttf
+        style: italic
+
   
