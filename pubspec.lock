@@ -41,6 +41,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.19.1"
+  color_scheme_display:
+    dependency: "direct main"
+    description:
+      name: color_scheme_display
+      sha256: d80a98a582f7954c7087a6129fa49e82243e86757a458151b0421f9ede20bcc4
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.2"
   fake_async:
     dependency: transitive
     description:
