@@ -10,10 +10,11 @@ dependencies:
   color_scheme_display: ^1.0.2
   flutter:
     sdk: flutter
-
-dev_dependencies:
   flutter_test:
     sdk: flutter
+
+dev_dependencies:
+  test: ^1.31.0
   flutter_lints: ^6.0.0
 
 flutter:
