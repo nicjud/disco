@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppDetails {
   static final String appName = "DiSCo";
-  static final String appTitle = "Dice Scoring Controller";
+  static final String appTitle = "Dice Score Collector";
 
   static ThemeData buildTheme(Brightness brightness) {
     final seedColor = Colors.lightBlue;
