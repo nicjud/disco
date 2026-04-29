@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
-  static const String route = "/";
+  static const String route = "/splash";
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       for (int x = 0; x <= showText.length; x++) {
-        int animWaitMillis = x == showText.length ? 1500 : 500; //final loop for extra wait
+        int animWaitMillis = x == showText.length ? 1000 : 500; //final loop for extra wait
         await Future.delayed(Duration(milliseconds: animWaitMillis));
         if (!context.mounted) return;
         if (x != showText.length) {
@@ -27,8 +27,8 @@ class _SplashScreenState extends State<SplashScreen> {
         }
       }
 
-      if (mounted) {
-        Navigator.pushReplacementNamed(context, Dashboard.route);
+      if (mounted && context.mounted) {
+        Navigator.popAndPushNamed(context, Dashboard.route);
       }
     });
   }

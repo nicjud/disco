@@ -1,5 +1,5 @@
 import 'package:disco/dashboard.dart';
-import 'package:disco/splash_screen.dart';
+import 'package:disco/screens/splash_screen.dart';
 import 'package:disco/app_details.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "DiSCo",
+      title: AppDetails.appName,
       theme: AppDetails.buildTheme(Brightness.light),
       initialRoute: SplashScreen.route,
       routes: {
