@@ -1,5 +1,7 @@
 import 'package:color_scheme_display/color_scheme_display.widget.dart';
 import 'package:disco/app_details.dart';
+import 'package:disco/widgets/die.dart';
+import 'package:disco/widgets/rerollable_die.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatelessWidget {
@@ -16,7 +18,17 @@ class Dashboard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(height: 30.0),
-            Text("Welcome to ${AppDetails.appTitle} dashboard"),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const Text("\"Would you like to play a game?\"", textAlign: .end),
+                const Text("- WOPR ", textAlign: .end),
+                const SizedBox(height: 20),
+                RerollableDie(die: Die.coin()),
+                RerollableDie(die: Die.d6(), buttonAxis: Axis.horizontal),
+                RerollableDie(die: Die.d20()),
+              ],
+            ),
             SizedBox(height: 30.0),
             _buttonForThemeColors(context, brightness: Brightness.dark),
           ],

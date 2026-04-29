@@ -1,4 +1,4 @@
-import 'package:disco/dashboard.dart';
+import 'package:disco/screens/dashboard.dart';
 import 'package:disco/screens/splash_screen.dart';
 import 'package:disco/app_details.dart';
 import 'package:flutter/material.dart';
